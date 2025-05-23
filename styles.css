@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(30, 30, 30);
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+
+    background: linear-gradient(to top, rgb(0, 220, 240), rgb(0, 220, 140));
+}
+
+input:focus {
+
+    outline: none;
+}
+
+#register_container {
+
+    margin: 2rem auto;
+    max-width: 900px;
+    min-height: 80vh;
+    display: flex;
+    box-shadow: 0 13px 27px -5px rgb(20, 20, 20);
+}
+
+#register_banner {
+
+    width: 50%;
+    background: url(img/fundo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#banner_layer {
+
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 120, 130, 0.7);
+}
+
+#register_banner h1 {
+
+    margin-bottom: 1.5rem;
+    color: rgb(240, 240, 240);
+    font-size: 4rem;
+    word-spacing: 50rem;
+    text-shadow: 1px 1px 5px rgb(20, 20, 20);
+}
+
+#register_form {
+
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+}
+
+#register_form h2 {
+
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+#register_form p {
+
+    margin-bottom: 1.5rem;
+    color: rgb(100, 100, 100);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.form_control {
+
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control label {
+
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+.form_control input {
+
+    padding: 0.6rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(140, 140, 140);
+}
+
+#open_generate_options {
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#open_generate_options:hover {
+
+    color: rgb(0, 140, 200);
+}
+
+#generate_options {
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#generate_options .form_control {
+
+    padding: 0.2rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#generate_options label {
+
+    font-size: 0.8rem;
+}
+
+#generate_options input[type = "text"]{
+
+    padding: 0.2rem 0;
+    max-width: 30px;
+    text-align: center;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#generate_options button {
+
+    margin: 0 auto;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    display: block;
+    background-color: rgb(0, 140, 200);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#register_form #generated_password {
+
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    color: rgb(30, 30, 30);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(0, 140, 200);
+    border-radius: 4px;
+}
+
+#register_form #generated_password p {
+
+    margin-bottom: 1rem;
+    color: rgb(20, 220, 80);
+}
+
+#copy_password {
+
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    color: rgb(20, 220, 80);
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgb(20, 220, 80);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#register_form input[type="submit"]{
+
+    opacity: 0.8;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    background-color: rgb(20, 220, 80);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#register_form input[type="submit"]:hover {
+
+    opacity: 1;
+}
+
+.hide {
+
+    display: none;
+}
